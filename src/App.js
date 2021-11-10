@@ -7,7 +7,7 @@ function App() {
         {" "}
         <header className="App-header">Search for a word</header>
         <button className="btn btn-primary">hi</button>
-        <footer>
+        <footer className="App-footer">
           Coded by Shelley White-Lyons <br /> Open-Sourced on{" "}
           <a href="https://github.com/wkshelley/dictionary-app">GitHub</a>{" "}
           hosted on{" "}
