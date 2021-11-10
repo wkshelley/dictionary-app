@@ -1,4 +1,5 @@
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
@@ -6,7 +7,9 @@ function App() {
       <div className="container">
         {" "}
         <header className="App-header">Search for a word</header>
-        <button className="btn btn-primary">hi</button>
+        <main>
+          <Dictionary />
+        </main>
         <footer className="App-footer">
           Coded by Shelley White-Lyons <br /> Open-Sourced on{" "}
           <a href="https://github.com/wkshelley/dictionary-app">GitHub</a>{" "}
