@@ -1,0 +1,12 @@
+.Dictionary form {
+  display: block;
+}
+
+.Dictionary label {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  margin-bottom: 20 px;
+  display: block;
+  line-height: 29px;
+}
