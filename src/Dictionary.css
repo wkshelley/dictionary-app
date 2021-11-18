@@ -5,6 +5,7 @@
 .Dictionary label {
   font-weight: 600;
   font-size: 25px;
+  margin-bottom: 5px;
 }
 
 .Dictionary section {
@@ -23,6 +24,6 @@
 }
 
 .Dictionary .hint {
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 5px;
 }
