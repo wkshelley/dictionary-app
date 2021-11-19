@@ -13,9 +13,21 @@ export default function Dictionary(props) {
     setResults(response.data[0]);
   }
 
+  function handlePexelsRespone(response) {
+    console.log(response.data);
+  }
+
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+
+    let pexelsApiKey =
+      "563492ad6f91700001000001427cdbcf06024c64ae954cb3ae990504";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsRespone);
   }
 
   function handleSubmit(event) {
