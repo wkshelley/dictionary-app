@@ -13,7 +13,7 @@ export default function Meaning(props) {
             <br />
             <div className="Example">
               {" "}
-              <em>{definition.example}</em>
+              {definition.example && definition.example.length > 0}
             </div>
             <br />
             <strong>Synonym</strong>
